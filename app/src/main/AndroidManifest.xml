@@ -17,8 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSCE546Lab1Camera"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".PhotoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +27,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".VideoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
